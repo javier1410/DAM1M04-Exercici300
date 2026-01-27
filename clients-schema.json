@@ -1,0 +1,45 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+        "id": {"type":"string"},
+        "name":{"type":"string"},
+        "age":{"type":"integer","minimum":0},
+        "loyalty_level":{"type":"string"},
+        "active":{"type":"boolean"},
+        "joined":{ "type": "string", "format": "date" },
+        "contact":{
+            "type":"object",
+            "properties":{
+                "email":{"type":"string"},
+                "phone":{"type":"string"} 
+            },
+            "required":["email","phone"],
+            "additionalProperties": false
+        },
+        "adress":{
+            "type":"object",
+            "properties":{
+                "city":{"type":"string"},
+                "country":{"type":"string"},
+                "postal_code":{"type":"string"}  
+            },
+            "required":["city","country","postal_code"],
+            "additionalProperties": false
+        },
+        "preferred_store":{
+            "type":"object",
+            "properties":{
+                "brand":{"type":"string"},
+                "location":{"type":"string"} 
+            },
+            "required":["brand","location"],
+            "additionalProperties": false
+        },
+        
+
+
+
+
+
